@@ -17,21 +17,22 @@ const btnSobreJogo = require('../imgs/sobre_jogo.png');
 const btnOutrosJogos = require('../imgs/outros_jogos.png');
 
 export default class Principal extends Component {
-  render() {
-    return (
-        <View style={styles.cenaPrincipal}>
-            <View style={styles.apresentacaoJogo}>
-                <Image source={logo} />
-                <Image source={btnJogar} />
-            </View>
 
-            <View style={styles.rodape}>
-                <Image source={btnSobreJogo} />
-                <Image source={btnOutrosJogos} />
+    render() {
+        return (
+            <View style={styles.cenaPrincipal}>
+                <View style={styles.apresentacaoJogo}>
+                    <Image source={logo} />
+                    <Image source={btnJogar} />
+                </View>
+
+                <View style={styles.rodape}>
+                    <Image source={btnSobreJogo} />
+                    <Image source={btnOutrosJogos} />
+                </View>
             </View>
-        </View>
-    );
-  }
+        );
+    }
 }
 
 const styles = StyleSheet.create({
