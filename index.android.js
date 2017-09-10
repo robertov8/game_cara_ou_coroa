@@ -11,6 +11,7 @@ import { Router, Stack, Scene } from 'react-native-router-flux';
 import Principal from './src/components/Principal';
 import SobreJogo from './src/components/SobreJogo';
 import OutrosJogos from './src/components/OutrosJogos';
+import Resultado from './src/components/Resultado';
 
 export default class game_cara_ou_coroa extends Component {
   render() {
@@ -24,6 +25,7 @@ export default class game_cara_ou_coroa extends Component {
                 <Scene key='principal' component={Principal} initial title="Cara ou Coroa" />
                 <Scene key='sobrejogo' component={SobreJogo} title="Sobre o Jogo"/>
                 <Scene key='outrosjogos' component={OutrosJogos} title="Outros Jogos" />
+                <Scene key='resultado' component={Resultado} title="Resultado" />
             </Stack>
         </Router>
     );
