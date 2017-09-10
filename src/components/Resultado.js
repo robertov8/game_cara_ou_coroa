@@ -32,13 +32,13 @@ export default class Resultado extends Component {
                     <Image source={cara} />
                 </View>
             );
-        } else {
-            return(
-                <View style={styles.resultado}>
-                    <Image source={coroa} />
-                </View>
-            );
         }
+
+        return(
+            <View style={styles.resultado}>
+                <Image source={coroa} />
+            </View>
+        );
     }
 }
 

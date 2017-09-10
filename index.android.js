@@ -6,28 +6,13 @@
 
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import { Router, Stack, Scene } from 'react-native-router-flux';
 
-import Principal from './src/components/Principal';
-import SobreJogo from './src/components/SobreJogo';
-import OutrosJogos from './src/components/OutrosJogos';
-import Resultado from './src/components/Resultado';
+import Rotas from './src/Rotas';
 
 export default class game_cara_ou_coroa extends Component {
   render() {
     return (
-        <Router>
-            <Stack
-                key='root'
-                navigationBarStyle={{ backgroundColor: '#61BD8C' }}
-                titleStyle={{ color: 'black', alignSelf: 'center' }}
-            >
-                <Scene key='principal' component={Principal} initial title="Cara ou Coroa" />
-                <Scene key='sobrejogo' component={SobreJogo} title="Sobre o Jogo"/>
-                <Scene key='outrosjogos' component={OutrosJogos} title="Outros Jogos" />
-                <Scene key='resultado' component={Resultado} title="Resultado" />
-            </Stack>
-        </Router>
+        <Rotas />
     );
   }
 }
