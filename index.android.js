@@ -16,10 +16,14 @@ export default class game_cara_ou_coroa extends Component {
   render() {
     return (
         <Router>
-            <Stack key='root'>
-                <Scene key='principal' component={Principal} initial title="Login" />
-                <Scene key='sobrejogo' component={SobreJogo} />
-                <Scene key='outrosjogos' component={OutrosJogos} />
+            <Stack
+                key='root'
+                navigationBarStyle={{ backgroundColor: '#61BD8C' }}
+                titleStyle={{ color: 'black', alignSelf: 'center' }}
+            >
+                <Scene key='principal' component={Principal} initial title="Cara ou Coroa" />
+                <Scene key='sobrejogo' component={SobreJogo} title="Sobre o Jogo"/>
+                <Scene key='outrosjogos' component={OutrosJogos} title="Outros Jogos" />
             </Stack>
         </Router>
     );
